@@ -1,14 +1,17 @@
 import { Pressable, View, StyleSheet } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import { MaterialIcons } from "@expo/vector-icons";
 
-function IconButtons({ icon, size, color, onPress}) {
+function IconButtons({onPress}) {
     return (
         <Pressable
             onPress={onPress}
-            style={({ pressed }) => pressed && styles.pressed}
+            style={({ pressed }) => {
+                return pressed && styles.pressed;
+            }}
+            android_ripple={{ color: "white", foreground: true }}
         >
             <View style={styles.buttonContainer}>
-                <Ionicons name={icon} size={size} color={color} />
+                <MaterialIcons name="add" size={25} color={"white"} />
             </View>
         </Pressable>
     );

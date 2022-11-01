@@ -20,9 +20,9 @@ function Home() {
         headerStyle: { backgroundColor: Colors.colors.darkpurple},
         headerTintColor: 'white',
         tabBarStyle: { backgroundColor: Colors.colors.darkpurple},
-        tabBarActiveTintColor: Colors.colors.gold,
-        headerRight: ({ tintColor }) => (
-          <IconButtons icon="add" size={25} color={tintColor}
+        tabBarActiveTintColor: Colors.colors.active,
+        headerRight: () => (
+          <IconButtons
             onPress={() => {
               navigation.navigate('AddExpense');
             }}

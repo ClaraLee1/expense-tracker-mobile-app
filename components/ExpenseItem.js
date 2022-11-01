@@ -3,13 +3,13 @@ import { Colors } from '../styles/helper';
 
 function ExpenseItem({ amount, description }) {
     return (
-        <View style={styles.expenseItem}>
+        <View style={styles.itemBox}>
             <View>
                 <Text style={styles.description}>
                     {description}
                 </Text>
             </View>
-            <View style={styles.amountContainer}>
+            <View style={styles.amountBox}>
                 <Text style={styles.amount}>
                     {amount}
                 </Text>
@@ -19,29 +19,23 @@ function ExpenseItem({ amount, description }) {
 }
 
 const styles = StyleSheet.create({
-    expenseItem: {
-        padding: 12,
-        marginVertical: 8,
+    itemBox: {
+        padding: 13,
+        marginVertical: 5,
         backgroundColor: Colors.colors.darkpurple,
         flexDirection: 'row',
         justifyContent: 'space-between',
         borderRadius: 6,
         elevation: 3,
-        shadowColor: Colors.colors.slategray,
-        shadowRadius: 4,
-        textShadowOffset: {width: 1, height: 1},
-        shadowOpacity: 0.3
     },
     description: {
-        fontSize: 16,
-        fontWeight:'bold',
-        color: Colors.colors.lavender
+        fontSize: 18,
+        color: 'white',
     },
-    amountContainer: {
+    amountBox: {
         paddingHorizontal: 12,
         paddingVertical: 4,
         backgroundColor: 'white',
-        justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 4,
         minWidth:80
@@ -51,7 +45,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     pressed: {
-        opacity:0.75
+        opacity:0.5
     }
 });
 
