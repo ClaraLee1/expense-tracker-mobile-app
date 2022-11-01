@@ -18,7 +18,7 @@ function Home() {
     <Tab.Navigator
       screenOptions={({ navigation }) => ({
         headerStyle: { backgroundColor: Colors.colors.darkpurple},
-        headerTintColor: 'white',
+        headerTintColor: Colors.colors.white,
         tabBarStyle: { backgroundColor: Colors.colors.darkpurple},
         tabBarActiveTintColor: Colors.colors.active,
         headerRight: () => (

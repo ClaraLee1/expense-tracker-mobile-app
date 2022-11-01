@@ -6,7 +6,7 @@ function Buttons({ text, onPress}) {
         <Pressable
             onPress={onPress}
             style={({ pressed }) => pressed && styles.pressed}
-            android_ripple={{ color: "white", foreground: true }}
+            android_ripple={{ color: Colors.colors.white, foreground: true }}
         >
             <View style={styles.button}>
                 <Text style={styles.buttonText}>
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         marginHorizontal: 10
     },
     buttonText: {
-        color: 'white',
+        color: Colors.colors.white,
         textAlign: 'center',
     },
     pressed: {

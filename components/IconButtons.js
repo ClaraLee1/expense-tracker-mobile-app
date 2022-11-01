@@ -1,5 +1,6 @@
 import { Pressable, View, StyleSheet } from 'react-native';
 import { MaterialIcons } from "@expo/vector-icons";
+import { Colors } from '../styles/helper';
 
 function IconButtons({onPress}) {
     return (
@@ -8,10 +9,10 @@ function IconButtons({onPress}) {
             style={({ pressed }) => {
                 return pressed && styles.pressed;
             }}
-            android_ripple={{ color: "white", foreground: true }}
+            android_ripple={{ color: Colors.colors.white, foreground: true }}
         >
             <View style={styles.buttonContainer}>
-                <MaterialIcons name="add" size={25} color={"white"} />
+                <MaterialIcons name="add" size={25} color={Colors.colors.white} />
             </View>
         </Pressable>
     );

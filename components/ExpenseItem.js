@@ -1,4 +1,4 @@
-import {Text, View, StyleSheet} from 'react-native';
+import { Text, View, StyleSheet } from 'react-native';
 import { Colors } from '../styles/helper';
 
 function ExpenseItem({ amount, description }) {
@@ -30,12 +30,12 @@ const styles = StyleSheet.create({
     },
     description: {
         fontSize: 18,
-        color: 'white',
+        color: Colors.colors.white,
     },
     amountBox: {
         paddingHorizontal: 12,
         paddingVertical: 4,
-        backgroundColor: 'white',
+        backgroundColor: Colors.colors.white,
         alignItems: 'center',
         borderRadius: 4,
         minWidth:80
