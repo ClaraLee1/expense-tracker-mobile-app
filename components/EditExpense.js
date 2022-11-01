@@ -4,7 +4,6 @@ import { deleteFromDB, updateToDB } from '../firebase/firestore';
 import { Colors } from '../styles/helper';
 
 function EditExpense( { route, navigation } ) {
-
     async function onItemMark() {
         Alert.alert(
             'Important',

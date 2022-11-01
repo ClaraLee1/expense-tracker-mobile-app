@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 24,
         fontWeight: 'bold',
-        color: 'white',
+        color: Colors.colors.white,
         marginVertical: 24,
         textAlign: 'center'
     },
